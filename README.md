@@ -4,7 +4,6 @@
 This project is a sign-up page built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. The goal of this assignment is to practice HTML and CSS skills by creating a visually appealing and functional sign-up form.
 
 ## Features
-- Responsive design for different screen sizes
 - User-friendly form layout
 - Input fields for:
   - First Name
@@ -29,6 +28,7 @@ To run this project, simply visit:
 - JavaScript validation for real-time feedback
 - Backend integration for user registration
 - Enhanced styling with animations
+- Full mobile responsiveness
 
 ## License
 This project is open-source and available under the MIT License.
