@@ -1,0 +1,203 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  /* Left side - Image sidebar */
+  .image-sidebar {
+    width: 40%;
+    height: 100%;
+    background-image: url('assets/Kiwi.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .logo-container img {
+    width: 70%;
+  }
+
+  .logo-text {
+    color: white;
+    font-size: 5rem;
+    margin-left: 15px;
+  }
+  
+  .photo-credit {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .photo-credit a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .photo-credit a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right side - Form container */
+  .form-container {
+    width: 60%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .intro-text {
+    width: 90%;
+    max-width: 650px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 30px 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5rem; /* Increase size */
+    font-weight: bold;
+    text-transform: uppercase; /* Make it uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-bottom: 30px;
+}
+
+  .intro-text p {
+    margin-bottom: 20px;
+  }
+  
+  .form-section {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    padding: 8px 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #2d6ae0;
+    box-shadow: 0 0 5px rgba(45, 106, 224, 0.3);
+  }
+  
+  .account-creation {
+    padding: 30px 40px;
+  }
+  
+  .create-account-btn {
+    background-color: #596D48;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .create-account-btn:hover {
+    background-color: #4c5e3f;
+  }
+  
+  .login-link {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+
+/* For password validation - only show red border after validation */
+input[type="password"]:invalid:not(:placeholder-shown):not(:focus):not(:empty) {
+    border-color: #C13838;
+}
+
+  /* For when the passwords don't match (you'll need JS for full implementation) */
+  input[type="password"].mismatch {
+    border-color: #C13838;
+  }
+  
+  /* You might want to add a custom error message */
+  .form-group {
+    position: relative;
+  }
+  
+  .error-message {
+    color: #C13838;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: -18px;
+  }
